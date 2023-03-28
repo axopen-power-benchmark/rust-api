@@ -1,0 +1,6 @@
+[global]
+address = "0.0.0.0"
+port = 8000
+
+[global.databases]
+test_db = { url = "mysql://axopen:Axopen01@localhost:3306/test_perf" }

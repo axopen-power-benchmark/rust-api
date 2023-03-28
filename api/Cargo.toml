@@ -1,0 +1,21 @@
+[package]
+name = "rust_api"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+
+[dependencies]
+rocket = { path = "../core/lib", features = ["serde_json", "json"] }
+diesel = { version = "2.0.2", features = ["mysql", "r2d2", "chrono", "numeric"] }
+diesel_migrations = "2.0.0"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8.5"
+bigdecimal = { version = "0.1.0", features = ["serde"] }
+
+[dev-dependencies]
+rand = "0.8"
+
+[dependencies.rocket_sync_db_pools]
+path = "../contrib/sync_db_pools/lib/"
+features = ["diesel_mysql_pool"]
