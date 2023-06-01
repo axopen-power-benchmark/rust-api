@@ -1,5 +1,9 @@
 # Rust API avec Rocket et Diesel
 
+Ce projet fait partie de l'étude de la consommation énergétique des frameworks
+de développement en conditions réelles.
+
+Des informations sur le protocole utilisé pour les tests se trouve [ici](https://github.com/axopen-power-benchmark/setup-benchmark)
 
 ## Dépendances
 
